@@ -1,0 +1,35 @@
+{
+  "skill_name": "skill-orchestrator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我读取这个 PDF 文件，然后提取里面的表格数据",
+      "expected_output": "Should identify pdf skill, decide on auto mode (single skill), execute reading and extraction. Should inform user which skill is being used.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我有些销售数据想做个报告给老板看，最好能做成幻灯片展示那种",
+      "expected_output": "Should identify xlsx + pptx combo, use suggest mode, propose a plan (analyze data with xlsx → create presentation with pptx), and execute after confirmation.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我想做一个 AI 驱动的仪表盘，可以实时显示用户数据，并支持搜索和筛选",
+      "expected_output": "Should identify frontend-design + webapp-testing combo (possibly claude-api for AI features), use plan mode, generate detailed multi-step execution plan with rationale before executing.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "帮我把这些乱七八糟的数据整理一下，搞干净",
+      "expected_output": "Should proactively identify xlsx skill, use suggest or auto mode, recognize that '整理数据' implies spreadsheet work without user explicitly saying 'excel' or 'xlsx'.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "我需要写一份技术方案文档，然后给团队发个内部通知公告这个新功能上线",
+      "expected_output": "Should identify doc-coauthoring + docx + internal-comms combo, use suggest or plan mode, sequence: write doc first, then send announcement. Should reason about dependencies.",
+      "files": []
+    }
+  ]
+}
